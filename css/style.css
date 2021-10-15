@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body{
@@ -14,11 +15,18 @@ body{
     clear: both;
 }
 
+img{
+    width: 100%;
+}
+
+.col{
+    float: left;
+}
+
 /* BUTTON */
 
 .button{
-    padding: 10px 20px;
-    
+    text-decoration: none;
 }
 
 .blue_btn{
@@ -30,17 +38,22 @@ body{
     background-color: #3C84FF;
 }
 
+.white_btn{
+    border: 1px solid black;
+    color: black;
+}
+
 /* HEADER */
 
 header{
     position: fixed;
     width: 100%;
     background-color: white;
+    z-index: 2;
 }
 
 .col.menu{
     width: 50%;
-    float: left;
 }
 
 .col.menu.right{
@@ -50,7 +63,11 @@ header{
 .col.menu ul li{
     list-style: none;
     display: inline-block;
+    border-bottom: 2px solid white;
+}
 
+.col.menu.right li:hover:not(:last-child),.col.menu.left li:hover{
+    border-bottom: 2px solid  #0061FF;
 }
 
 .col.menu li a{
@@ -63,14 +80,18 @@ header{
 
 .col.menu li img{
     vertical-align: middle;
+    width: 150px;
+}
+
+.head_btn{
+    padding: 10px 20px;
 }
 
 /* JUMBOTRON */
 
 .jumbotron{
     position: relative;
-    background-color: #B4D0E7;
-    height: 2000px;
+    background-color:#B4D0E7;
     top: 80px;
 }
 
@@ -78,9 +99,239 @@ header{
     width: 80%;
     text-align: center;
     margin: auto;
+    height: 90vh;
 }
 
 .jumbotron h1{
     font-size: 80px;
-    padding-top: 20%;
+    padding-top: 5%;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.col.jumbo_text{
+    width: 30%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.col.jumbo_text a{
+    display: inline-block;
+    margin: 50px 0 30px;
+}   
+
+.col.jumbo_img{
+    width: 70%;
+}
+
+.arrow_down{
+    font-size: 50px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.jumbo_btn{
+    padding: 10px 20px;
+}
+
+/* CONTAINER */
+.container{
+    width: 70%;
+    margin:auto;
+    margin-bottom: 30vh;
+}
+
+section{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+/* BUSINESS PLAN */
+
+.business_plan{
+    position: relative;
+    top: 250px;
+}
+
+.business_plan h2{
+    font-size: 50px;
+    padding-bottom: 100px;
+}
+
+.fake_button{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.monthly,.annual{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.monthly,.annual:hover{
+    cursor: pointer;
+}
+
+.monthly{
+    border: 6px solid #2F7EFF;
+}
+
+.annual{
+    margin-left: 20px;
+    border: 1px solid lightgray;
+}
+
+/* plans */
+.plan_choice .col{
+    width: 30%;
+    margin-top: 100px !important;
+}
+
+.plan_choice .col.center{
+    margin: 0 5%;
+}
+.col_title{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.plan_choice ul li{
+    padding: 20px 0;
+    list-style: none;
+}
+
+.columns .col_cont{
+    height: 130vh;
+}
+
+.col_cont{
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 30px;
+}
+
+.plan_choice .columns h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.plan_choice .price{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.plan_choice .price_2{
+    display: inline-block;
+    color: gray;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.plan_choice .fa-ul{
+    margin-left: 1.5em;
+}
+
+.plan_choice .columns .blue_btn{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.plan_choice .buy_now{
+    color: blue;
+    font-weight: 700;
+}
+
+.separator{
+    width: 30%;
+    height: 1px;
+    background-color: lightgray;
+    margin: 20px 0 30px;
+}
+
+.plan_choice .info_plan{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.plan_choice .fa-check{
+    color: blue !important;
+}
+
+.plan_choice .clearfix.columns{
+    margin-bottom: 10vh;
+}
+
+.raw .col_cont h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0 30px;
+}
+
+.raw .col_cont h3,.raw .col_cont .btn_enterprise{
+    display: inline-block;
+    float: left;
+}
+
+.raw .col_cont h3{
+    display: inline-block;
+    width: 70%;
+    line-height: 60px;
+    font-size: 50px;
+}
+
+.raw .col_cont .clearfix h3,.raw .col_cont .clearfix a{
+    line-height: 50px;
+}
+
+.raw .col_cont .btn_enterprise{
+    width: 30%;
+    text-align: center;
+}
+
+/* CONTACT */
+
+.container.contact{
+    position: relative;
+    top: 50vh;
+}
+
+.contact .col.image,.col.text{
+    width: 50%;
+    float: left;
+}
+
+.contact .col.text{
+    padding: 5%;
+}
+
+.contact .col.text h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact .col.text span{
+    display: inline-block;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.contact .contact_btn{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* OPERATIONS */
+
+.container.operations{
 }
