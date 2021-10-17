@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 body{
@@ -47,6 +46,7 @@ img{
 
 header{
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: white;
     z-index: 2;
@@ -90,9 +90,8 @@ header{
 /* JUMBOTRON */
 
 .jumbotron{
-    position: relative;
+    margin-top: 80px;
     background-color:#B4D0E7;
-    top: 80px;
 }
 
 .container_jumbo{
@@ -149,8 +148,7 @@ section{
 /* BUSINESS PLAN */
 
 .business_plan{
-    position: relative;
-    top: 250px;
+    margin-top: 20vh;
 }
 
 .business_plan h2{
@@ -300,11 +298,6 @@ section{
 
 /* CONTACT */
 
-.container.contact{
-    position: relative;
-    top: 50vh;
-}
-
 .contact .col.image,.col.text{
     width: 50%;
     float: left;
@@ -333,5 +326,125 @@ section{
 
 /* OPERATIONS */
 
-.container.operations{
+.container.operations h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.operations .col_left,.operations .col_center,.operations .col_right{
+    width: 25%;
+    float: left;
+}
+
+.operations .col_center{
+    margin: 0 12.5%;
+}
+
+.operations img{
+    margin-top: 70px;
+}
+
+.operations h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.operations a{
+    color: black;
+}
+
+/* TEAMS */
+.teams h2{
+    font-size: 50px; 
+}
+
+.teams a{
+    display: inline-block;
+    margin: 50px 0;
+    color: blue;
+    font-weight: 700;
+}
+
+.teams .col_left,.teams .col_right{
+    width: 25%;
+    float: left;
+}
+
+.teams .col_center{
+    width: 50%;
+    background-color:#F5F5F5;
+    float: left;
+    padding: 50px;
+}
+
+.teams .c_left,.teams .c_right{
+    width: 50%;
+    float: left;
+}
+
+.teams .col_center img{
+    width:20% ;
+}
+
+.teams #author{
+    margin:30px 0 70px;
+}
+
+.teams .separator{
+    margin: 30px 0 50px;
+}
+
+.teams span{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.col_ins{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 12.5vw;
+}
+
+.col_ins img{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: invert(100%);
+}
+
+.teams #top_left_left{
+    background-color:#A2D39B;
+    border: 10px solid #D0E9CD;
+}
+
+.teams #top_left_right{
+    background-color: #61082B;
+}
+
+.teams #bottom_left_left{
+    background-color: #0093CE;
+}
+
+.teams #bottom_left_right{
+    background-color: #FF1C1C;
+}
+
+.teams #top_right_left{
+    background-color:#D5001F;
+}
+
+.teams #top_right_right{
+    background-color: #B4D0E7;
+}
+
+.teams #bottom_right_left{
+    background-color: #0D2481;
+}
+
+.teams #bottom_right_right{
+    background-color: #FFD830;
 }
