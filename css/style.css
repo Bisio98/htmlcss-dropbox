@@ -204,7 +204,7 @@ section{
 }
 
 .columns .col_cont{
-    height: 130vh;
+    min-height: 130vh;
 }
 
 .col_cont{
